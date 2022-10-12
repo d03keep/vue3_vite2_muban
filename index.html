@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 13.3333vw;">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.2/tcplayer.min.css" rel="stylesheet"/>
+    <script>var API_URL = 'https://sport.sun8tv.com'</script>
+    <title>猎鹰直播</title>
+  </head>
+  <body>
+    <div id="app">
+        <!--ssr-outlet-->
+    </div>
+    <script async type="module" src="/src/main.ts"></script>
+    <!-- --播放器文件-- -->
+
+    <!--如果需要在 Chrome 和 Firefox 等现代浏览器中通过 H5 播放 Webrtc 视频，需要在 tcplayer.vx.x.x.min.js 之前引入 TXLivePlaye
+    r-x.x.x.min.js。-->
+    <!--有些浏览器环境不支持 Webrtc，播放器会将 Webrtc 流地址自动转换为 HLS 格式地址，因此快直播场景同样需要引入hls.min.x.xx.
+    xm.js。-->
+    <script async src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.1/libs/TXLivePlayer-1.2.0.min.js"></script>
+    <!--如果需要在 Chrome 和 Firefox 等现代浏览器中通过 H5 播放 HLS 协议的视频，需要在 tcplayer.vx.x.x.min.js 之前引入 hls.min.
+    x.xx.xm.js。-->
+    <script async src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.2/libs/hls.min.0.13.2m.js"></script>
+    <!--如果需要在 Chrome 和 Firefox 等现代浏览器中通过 H5 播放 FLV 格式的视频，需要在 tcplayer.vx.x.x.min.js 之前引入 flv.min.x.
+    x.x.js。-->
+    <script async src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.2/libs/flv.min.1.6.2.js"></script>
+    <!--播放器脚本文件-->
+    <script async src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.2/tcplayer.v4.5.2.min.js"></script>
+    <footer style="display: none;">
+        <script async type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1281139467&web_id=1281139467"></script>
+    </footer>
+  </body>
+</html>
